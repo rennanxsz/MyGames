@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C6665027BC816400F12BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6664F27BC816400F12BA1 /* AppDelegate.swift */; };
-		00C6665227BC816400F12BA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6665127BC816400F12BA1 /* SceneDelegate.swift */; };
-		00C6665427BC816400F12BA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6665327BC816400F12BA1 /* ViewController.swift */; };
-		00C6665727BC816400F12BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C6665527BC816400F12BA1 /* Main.storyboard */; };
-		00C6665927BC816500F12BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C6665827BC816500F12BA1 /* Assets.xcassets */; };
-		00C6665C27BC816500F12BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C6665A27BC816500F12BA1 /* LaunchScreen.storyboard */; };
+		00C6667027BC847F00F12BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6666F27BC847F00F12BA1 /* AppDelegate.swift */; };
+		00C6667227BC847F00F12BA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6667127BC847F00F12BA1 /* SceneDelegate.swift */; };
+		00C6667427BC847F00F12BA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6667327BC847F00F12BA1 /* ViewController.swift */; };
+		00C6667727BC847F00F12BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C6667527BC847F00F12BA1 /* Main.storyboard */; };
+		00C6667A27BC847F00F12BA1 /* MyGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00C6667827BC847F00F12BA1 /* MyGames.xcdatamodeld */; };
+		00C6667C27BC848000F12BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C6667B27BC848000F12BA1 /* Assets.xcassets */; };
+		00C6667F27BC848000F12BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C6667D27BC848000F12BA1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00C6664C27BC816400F12BA1 /* MyGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00C6664F27BC816400F12BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00C6665127BC816400F12BA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00C6665327BC816400F12BA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00C6665627BC816400F12BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		00C6665827BC816500F12BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00C6665B27BC816500F12BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		00C6665D27BC816500F12BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C6666C27BC847F00F12BA1 /* MyGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C6666F27BC847F00F12BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00C6667127BC847F00F12BA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00C6667327BC847F00F12BA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00C6667627BC847F00F12BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00C6667927BC847F00F12BA1 /* MyGames.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGames.xcdatamodel; sourceTree = "<group>"; };
+		00C6667B27BC848000F12BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00C6667E27BC848000F12BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00C6668027BC848000F12BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00C6664927BC816400F12BA1 /* Frameworks */ = {
+		00C6666927BC847F00F12BA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00C6664327BC816400F12BA1 = {
+		00C6666327BC847F00F12BA1 = {
 			isa = PBXGroup;
 			children = (
-				00C6664E27BC816400F12BA1 /* MyGames */,
-				00C6664D27BC816400F12BA1 /* Products */,
+				00C6666E27BC847F00F12BA1 /* MyGames */,
+				00C6666D27BC847F00F12BA1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		00C6664D27BC816400F12BA1 /* Products */ = {
+		00C6666D27BC847F00F12BA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00C6664C27BC816400F12BA1 /* MyGames.app */,
+				00C6666C27BC847F00F12BA1 /* MyGames.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00C6664E27BC816400F12BA1 /* MyGames */ = {
+		00C6666E27BC847F00F12BA1 /* MyGames */ = {
 			isa = PBXGroup;
 			children = (
-				00C6664F27BC816400F12BA1 /* AppDelegate.swift */,
-				00C6665127BC816400F12BA1 /* SceneDelegate.swift */,
-				00C6665327BC816400F12BA1 /* ViewController.swift */,
-				00C6665527BC816400F12BA1 /* Main.storyboard */,
-				00C6665827BC816500F12BA1 /* Assets.xcassets */,
-				00C6665A27BC816500F12BA1 /* LaunchScreen.storyboard */,
-				00C6665D27BC816500F12BA1 /* Info.plist */,
+				00C6666F27BC847F00F12BA1 /* AppDelegate.swift */,
+				00C6667127BC847F00F12BA1 /* SceneDelegate.swift */,
+				00C6667327BC847F00F12BA1 /* ViewController.swift */,
+				00C6667527BC847F00F12BA1 /* Main.storyboard */,
+				00C6667B27BC848000F12BA1 /* Assets.xcassets */,
+				00C6667D27BC848000F12BA1 /* LaunchScreen.storyboard */,
+				00C6668027BC848000F12BA1 /* Info.plist */,
+				00C6667827BC847F00F12BA1 /* MyGames.xcdatamodeld */,
 			);
 			path = MyGames;
 			sourceTree = "<group>";
@@ -70,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00C6664B27BC816400F12BA1 /* MyGames */ = {
+		00C6666B27BC847F00F12BA1 /* MyGames */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00C6666027BC816500F12BA1 /* Build configuration list for PBXNativeTarget "MyGames" */;
+			buildConfigurationList = 00C6668327BC848000F12BA1 /* Build configuration list for PBXNativeTarget "MyGames" */;
 			buildPhases = (
-				00C6664827BC816400F12BA1 /* Sources */,
-				00C6664927BC816400F12BA1 /* Frameworks */,
-				00C6664A27BC816400F12BA1 /* Resources */,
+				00C6666827BC847F00F12BA1 /* Sources */,
+				00C6666927BC847F00F12BA1 /* Frameworks */,
+				00C6666A27BC847F00F12BA1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +87,25 @@
 			);
 			name = MyGames;
 			productName = MyGames;
-			productReference = 00C6664C27BC816400F12BA1 /* MyGames.app */;
+			productReference = 00C6666C27BC847F00F12BA1 /* MyGames.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		00C6664427BC816400F12BA1 /* Project object */ = {
+		00C6666427BC847F00F12BA1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					00C6664B27BC816400F12BA1 = {
+					00C6666B27BC847F00F12BA1 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 00C6664727BC816400F12BA1 /* Build configuration list for PBXProject "MyGames" */;
+			buildConfigurationList = 00C6666727BC847F00F12BA1 /* Build configuration list for PBXProject "MyGames" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 00C6664327BC816400F12BA1;
-			productRefGroup = 00C6664D27BC816400F12BA1 /* Products */;
+			mainGroup = 00C6666327BC847F00F12BA1;
+			productRefGroup = 00C6666D27BC847F00F12BA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00C6664B27BC816400F12BA1 /* MyGames */,
+				00C6666B27BC847F00F12BA1 /* MyGames */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00C6664A27BC816400F12BA1 /* Resources */ = {
+		00C6666A27BC847F00F12BA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C6665C27BC816500F12BA1 /* LaunchScreen.storyboard in Resources */,
-				00C6665927BC816500F12BA1 /* Assets.xcassets in Resources */,
-				00C6665727BC816400F12BA1 /* Main.storyboard in Resources */,
+				00C6667F27BC848000F12BA1 /* LaunchScreen.storyboard in Resources */,
+				00C6667C27BC848000F12BA1 /* Assets.xcassets in Resources */,
+				00C6667727BC847F00F12BA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00C6664827BC816400F12BA1 /* Sources */ = {
+		00C6666827BC847F00F12BA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C6665427BC816400F12BA1 /* ViewController.swift in Sources */,
-				00C6665027BC816400F12BA1 /* AppDelegate.swift in Sources */,
-				00C6665227BC816400F12BA1 /* SceneDelegate.swift in Sources */,
+				00C6667427BC847F00F12BA1 /* ViewController.swift in Sources */,
+				00C6667027BC847F00F12BA1 /* AppDelegate.swift in Sources */,
+				00C6667227BC847F00F12BA1 /* SceneDelegate.swift in Sources */,
+				00C6667A27BC847F00F12BA1 /* MyGames.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00C6665527BC816400F12BA1 /* Main.storyboard */ = {
+		00C6667527BC847F00F12BA1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				00C6665627BC816400F12BA1 /* Base */,
+				00C6667627BC847F00F12BA1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		00C6665A27BC816500F12BA1 /* LaunchScreen.storyboard */ = {
+		00C6667D27BC848000F12BA1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				00C6665B27BC816500F12BA1 /* Base */,
+				00C6667E27BC848000F12BA1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00C6665E27BC816500F12BA1 /* Debug */ = {
+		00C6668127BC848000F12BA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		00C6665F27BC816500F12BA1 /* Release */ = {
+		00C6668227BC848000F12BA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +286,7 @@
 			};
 			name = Release;
 		};
-		00C6666127BC816500F12BA1 /* Debug */ = {
+		00C6668427BC848000F12BA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -294,6 +298,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,11 +310,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		00C6666227BC816500F12BA1 /* Release */ = {
+		00C6668527BC848000F12BA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -321,6 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,32 +338,45 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00C6664727BC816400F12BA1 /* Build configuration list for PBXProject "MyGames" */ = {
+		00C6666727BC847F00F12BA1 /* Build configuration list for PBXProject "MyGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00C6665E27BC816500F12BA1 /* Debug */,
-				00C6665F27BC816500F12BA1 /* Release */,
+				00C6668127BC848000F12BA1 /* Debug */,
+				00C6668227BC848000F12BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00C6666027BC816500F12BA1 /* Build configuration list for PBXNativeTarget "MyGames" */ = {
+		00C6668327BC848000F12BA1 /* Build configuration list for PBXNativeTarget "MyGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00C6666127BC816500F12BA1 /* Debug */,
-				00C6666227BC816500F12BA1 /* Release */,
+				00C6668427BC848000F12BA1 /* Debug */,
+				00C6668527BC848000F12BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00C6667827BC847F00F12BA1 /* MyGames.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00C6667927BC847F00F12BA1 /* MyGames.xcdatamodel */,
+			);
+			currentVersion = 00C6667927BC847F00F12BA1 /* MyGames.xcdatamodel */;
+			path = MyGames.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 00C6664427BC816400F12BA1 /* Project object */;
+	rootObject = 00C6666427BC847F00F12BA1 /* Project object */;
 }
