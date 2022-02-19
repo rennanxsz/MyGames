@@ -248,7 +248,7 @@
                                     <constraint firstAttribute="height" constant="40" id="uID-Mg-d6G"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Adicionar">
+                                <buttonConfiguration key="configuration" style="plain" title="ADICIONAR">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
                                     <color key="baseForegroundColor" white="1" alpha="0.90402524829999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
