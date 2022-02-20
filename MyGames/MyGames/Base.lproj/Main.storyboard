@@ -62,7 +62,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ivCover" destination="mKu-6L-pen" id="iKv-XJ-KQs"/>
-                                    <outlet property="lbConsole" destination="L7I-Sd-1ZN" id="kKL-tH-MFf"/>
+                                    <outlet property="lbConsole" destination="iLH-RG-rI7" id="A0V-Di-8Ml"/>
                                     <outlet property="lbTitle" destination="eZ2-TF-fum" id="S8S-Cg-7Fc"/>
                                     <segue destination="mQj-Ne-GH7" kind="show" id="nLx-RA-sXT"/>
                                 </connections>
@@ -253,7 +253,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="0.90402524829999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="addEditCover:" destination="a4n-vj-1ne" eventType="touchUpInside" id="Jmi-gb-N3F"/>
+                                    <action selector="addEditGame:" destination="a4n-vj-1ne" eventType="touchUpInside" id="biz-M5-6uI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exr-Zx-OhP">
@@ -262,6 +262,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Toque para adicionar a imagem de capa">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addEditCover:" destination="a4n-vj-1ne" eventType="touchUpInside" id="Hhq-sk-Yqs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Hg-ye-1BH"/>
