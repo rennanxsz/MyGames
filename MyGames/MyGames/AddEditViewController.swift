@@ -99,6 +99,7 @@ class AddEditViewController: UIViewController {
             let console = consolesManager.consoles[pickerView.selectedRow(inComponent: 0)]
             game.console = console
         }
+        game.cover = ivCover.image
         do{
         try context.save()
         } catch {
