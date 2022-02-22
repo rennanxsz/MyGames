@@ -60,6 +60,33 @@ class AddEditViewController: UIViewController {
     }
     
     @IBAction func addEditCover(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Selecionar poster", message: "De onde você quer escolher o poster?", preferredStyle: .actionSheet)
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let cameraAction = UIAlertAction(title: "Câmera", style: .default, handler: { (action: UIAlertAction) in
+                self.selectPicture(sourceType: .camera)
+            })
+            alert.addAction(cameraAction)
+        }
+        let libraryAction = UIAlertAction(title: "Biblioteca de fotos", style: .default) { (action: UIAlertAction) in
+            self.selectPicture(sourceType: .photoLibrary)
+        }
+        alert.addAction(libraryAction)
+        let photosAction = UIAlertAction(title: "Álbum de fotos", style: .default) { (action: UIAlertAction) in
+            self.selectPicture(sourceType: .savedPhotosAlbum)
+        }
+        alert.addAction(photosAction)
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func selectPicture(sourceType: UIImagePickerController.SourceType) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = sourceType
+        imagePicker.delegate = self
+        imagePicker.navigationBar.tintColor = UIColor(named: "main")
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func addEditGame(_ sender: UIButton) {
@@ -68,6 +95,10 @@ class AddEditViewController: UIViewController {
         }
         game.title = tfTitle.text
         game.releaseDate = dpReleaseDate.date
+        if tfConsole.text!.isEmpty {
+            let console = consolesManager.consoles[pickerView.selectedRow(inComponent: 0)]
+            game.console = console
+        }
         do{
         try context.save()
         } catch {
@@ -90,5 +121,15 @@ extension AddEditViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let console = consolesManager.consoles[row]
         return console.name
+    }
+}
+
+extension AddEditViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        ivCover.image = image
+        btCover.setImage(nil, for: .normal)
+        dismiss(animated: true, completion: nil)
     }
 }
