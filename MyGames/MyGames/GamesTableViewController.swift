@@ -18,14 +18,19 @@ class GamesTableViewController: UITableViewController {
         
         label.text = "Você não tem jogos cadastrados"
         label.textAlignment = .center
+        
+        
         loadGames()
     }
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "gameSegue" {
+        if segue.identifier! == "gameSegue" {
             
             let vc = segue.destination as! GameViewController
             
+            if let games = fetchedResultController.fetchedObjects {
+                vc.game = games[tableView.indexPathForSelectedRow!.row]
+            }
         }
         
     }

@@ -20,6 +20,11 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         lbTitle.text = game.title
         lbConsole.text = game.console?.name
         if let releaseDate = game.releaseDate {
@@ -34,6 +39,11 @@ class GameViewController: UIViewController {
         } else {
             ivCover.image = UIImage (named: "noCoverFull")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddEditViewController
+        vc.game = game
     }
     
 
