@@ -62,7 +62,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ivCover" destination="mKu-6L-pen" id="iKv-XJ-KQs"/>
-                                    <outlet property="lbConsole" destination="iLH-RG-rI7" id="A0V-Di-8Ml"/>
+                                    <outlet property="lbConsole" destination="iLH-RG-rI7" id="vWu-x5-y08"/>
                                     <outlet property="lbTitle" destination="eZ2-TF-fum" id="S8S-Cg-7Fc"/>
                                     <segue destination="mQj-Ne-GH7" kind="show" identifier="gameSegue" id="nLx-RA-sXT"/>
                                 </connections>
@@ -101,17 +101,23 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C29-0s-120">
                                 <rect key="frame" x="16" y="52.5" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wzt-cl-jeR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano de Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-lb-D4A">
                                 <rect key="frame" x="16" y="81.5" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6BW-MY-AZ8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TuH-Gc-gdH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="TuH-Gc-gdH">
                                 <rect key="frame" x="16" y="118.5" width="382" height="586.5"/>
                             </imageView>
                         </subviews>
@@ -376,7 +382,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uCD-rT-B0P"/>
+        <segue reference="dgD-8w-5iY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="console" width="23" height="23"/>
