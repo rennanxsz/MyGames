@@ -11,14 +11,29 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbConsole: UILabel!
-    @IBOutlet weak var lbReleaseDAte: UILabel!
+    @IBOutlet weak var lbReleaseDate: UILabel!
     @IBOutlet weak var ivCover: UIImageView!
+    
+    var game: Game!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        lbTitle.text = game.title
+        lbConsole.text = game.console?.name
+        if let releaseDate = game.releaseDate {
+            let formater = DateFormatter()
+            formater.dateStyle = .long
+            formater.locale = Locale(identifier: "pt-BR")
+            lbReleaseDate.text = "Lançamento: " + formater.string(from: releaseDate)
+        }
+        
+        if let image = game.cover as? UIImage {
+            ivCover.image = image
+        } else {
+            ivCover.image = UIImage (named: "noCoverFull")
+        }
     }
     
 

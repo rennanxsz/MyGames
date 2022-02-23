@@ -21,6 +21,15 @@ class GamesTableViewController: UITableViewController {
         loadGames()
     }
         
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gameSegue" {
+            
+            let vc = segue.destination as! GameViewController
+            
+        }
+        
+    }
+    
     func loadGames() {
         let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest()
         let sortDescritor = NSSortDescriptor(key: "title", ascending: true)
