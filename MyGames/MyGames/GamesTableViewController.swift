@@ -29,6 +29,10 @@ class GamesTableViewController: UITableViewController {
         
         searchController.searchBar.delegate = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         loadGames()
     }
