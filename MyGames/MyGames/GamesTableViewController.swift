@@ -12,12 +12,22 @@ class GamesTableViewController: UITableViewController {
     
     var fetchedResultController: NSFetchedResultsController<Game>!
     var label = UILabel()
+    let searchController = UISearchController(searchResultsController: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         label.text = "Você não tem jogos cadastrados"
         label.textAlignment = .center
+        
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.tintColor = .white
+        searchController.searchBar.barTintColor = .white
+        navigationItem.searchController = searchController
+        
+        searchController.searchBar.delegate = self
         
         
         loadGames()
@@ -35,10 +45,15 @@ class GamesTableViewController: UITableViewController {
         
     }
     
-    func loadGames() {
+    func loadGames(filtering: String = "") {
         let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest()
         let sortDescritor = NSSortDescriptor(key: "title", ascending: true)
         fetchRequest.sortDescriptors = [sortDescritor]
+        
+        if !filtering.isEmpty {
+            let predicate = NSPredicate(format: "title contains [c] %@", filtering )
+            fetchRequest.predicate = predicate
+        }
         
         fetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultController.delegate = self
@@ -49,8 +64,7 @@ class GamesTableViewController: UITableViewController {
             print(error.localizedDescription)
         }
         
-        
-        }
+    }
     
     
     // MARK: - Table view data source
@@ -93,33 +107,6 @@ class GamesTableViewController: UITableViewController {
         }
     }
     
-    
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension GamesTableViewController: NSFetchedResultsControllerDelegate {
@@ -137,4 +124,20 @@ extension GamesTableViewController: NSFetchedResultsControllerDelegate {
         
     }
         
+}
+
+extension GamesTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        loadGames()
+        tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        loadGames(filtering: searchBar.text!)
+        tableView.reloadData()
+    }
 }
