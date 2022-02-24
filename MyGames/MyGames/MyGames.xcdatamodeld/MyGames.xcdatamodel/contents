@@ -8,7 +8,7 @@
         <attribute name="cover" optional="YES" attributeType="Transformable"/>
         <attribute name="releaseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="console" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Console" inverseName="games" inverseEntity="Console"/>
+        <relationship name="console" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Console" inverseName="games" inverseEntity="Console"/>
     </entity>
     <elements>
         <element name="Console" positionX="-267.5703125" positionY="41.30859375" width="128" height="59"/>

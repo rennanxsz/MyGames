@@ -29,12 +29,14 @@ class GamesTableViewController: UITableViewController {
         
         searchController.searchBar.delegate = self
         
+        loadGames()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        loadGames()
+        tableView.reloadData()
     }
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
